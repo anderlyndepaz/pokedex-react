@@ -1,0 +1,103 @@
+.header {
+    background-color: #d1d1d1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .div_header {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1400px;
+      padding: 0 15px;
+      margin: 0 auto;
+  
+      .div_logo {
+        img {
+          width: 120px;
+          transition: transform 0.3s ease-in-out;
+  
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+  
+      .div_search {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        border: 1px solid #c0c0c0;
+        border-radius: 20px;
+        padding: 5px 10px;
+        gap: 8px;
+  
+        input[type="search"] {
+          border: none;
+          outline: none;
+          font-size: 1rem;
+          padding: 8px 12px;
+          border-radius: 20px;
+          width: 220px;
+          background-color: #f9f9f9;
+          transition: box-shadow 0.3s ease-in-out;
+  
+          &:focus {
+            box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
+          }
+        }
+  
+        button {
+          background-color: #007bff;
+          color: #ffffff;
+          border: none;
+          padding: 8px 16px;
+          font-size: 1rem;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+  
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+  
+        svg {
+          color: #6c757d;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .div_header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+  
+        .div_logo img {
+          width: 100px;
+        }
+  
+        .div_search {
+          margin-top: 10px;
+          width: 100%;
+          justify-content: space-between;
+  
+          input[type="search"] {
+            width: 100%;
+          }
+  
+          button {
+            padding: 8px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  
